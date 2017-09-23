@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Button with Firebase!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Employee Data Management</h1>
+    </div>
+    <div class="panel panel-primary" id="employee-list">
+        <div class="panel-heading">
+            <h3>Current Employees</h3>
+        </div>
+        <div class "panel-body">
+            <div class = "row">
+                <div class = "col-md-2" id="display-name">
+                    <h4>Employee Name</h4>
+                    <div class = "col-md-2" id="list-name"></div>
+                </div>
+                <div class = "col-md-2" id="display-role">
+                    <h4>Role</h4>
+                    <div class = "col-md-2" id="list-role"></div>
+                </div>
+                <div class = "col-md-2" id="display-date">
+                    <h4>Start Date</h4>
+                    <div class = "col-md-2" id="list-date"></div>
+                </div>
+                <div class = "col-md-2" id="display-months">
+                    <h4>Months Worked</h4>
+                    <div class = "col-md-2" id="list-months"></div>
+                </div>
+                <div class = "col-md-2" id="display-rate">
+                    <h4>Monthly Rate ($)</h4>
+                    <div class = "col-md-2" id="list-rate"></div>
+                </div>
+                <div class = "col-md-2" id="diplay-billed">
+                    <div class = "col-md-2" id="list-billed"></div>
+                    <h4>Total Billed ($)</h4>
+                </div>
+            </div>
+
+        </div>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3>Add Employee</h3>
+        </div>
+        <div class "panel-body">
+        <form role="form">
+            <div class = "form-group">
+                <label for="input-name">Employee Name</label>
+                <input type="text" class="form-control" id="input-name">
+                <label for="input-role">Role</label>
+                <input type="text" class="form-control" id="input-role">
+                <label for="input-date">Start Date</label>
+                <input type="text" class="form-control" id="input-date">
+                <label for="input-rate">Monthly Rate</label>
+                <input type="text" class="form-control" id="input-rate">
+            </div>
+             <button class="btn btn-default" id="add-employee" type="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script type="text/javascript" src="employeedata.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+
+</body>
+</html>
